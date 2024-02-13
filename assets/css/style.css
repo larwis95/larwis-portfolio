@@ -5,6 +5,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Makes the background image not repeat and stretches it to cover the enture page - probably better to put the img in the html so can add an alt atribute*/
 body {
     background-image: url("../images/Colorful-Paint-Splash-Background.jpg");
     background-repeat: no-repeat;
@@ -16,6 +17,7 @@ body {
 
 }
 
+/* targets the header element, and sets it as a flex-container*/
 header {
     font-family: 'Inter', 'Montserrat', sans-serif;
     background: rgb(243, 62, 122);
@@ -45,6 +47,7 @@ header img {
 header h1 {
     display: flex;
     align-items: center;
+    font-size: 30px;
 }
 
 header h2 {
@@ -52,6 +55,7 @@ header h2 {
     margin-top: 80px;
     margin-left: -100px;
     padding: 10px;
+    font-size: 25px;
 }
 
 header nav {
@@ -78,6 +82,7 @@ header ul {
     align-items: center;
 }
 
+/*changes the a elements in header to have no underline, white color, a outline around the text, 39px font size, and bold weight*/
 header a {
     text-decoration: none;
     color: white;
@@ -86,10 +91,12 @@ header a {
     font-weight: bold;
 }
 
+/* changes the cursor to a pointer when you hover over an anchor */
 a:hover {
     cursor: pointer;
 }
 
+/*creates the container for the main content which is an article element*/
 article {
     font-family: 'Inter', 'Montserrat', sans-serif;
     background: rgba(255, 130, 80, .8);
@@ -106,6 +113,7 @@ article {
     margin-top: 10px
 }
 
+/* creates my container for the slide show, if there is overflow content it sets it to scroll, then it will smoothly transition the scroll bar */
 .slider {
     display: flex;
     overflow-x: auto;
@@ -113,20 +121,26 @@ article {
     width: 900px;
 }
 
+/* changes the appearance of the .slider class scroll bar, sets its height and width*/
 .slider::-webkit-scrollbar {
     width: 5px;
     height: 15px;
 }
+
+/* changes the appearance of the draggable part of the scroll bar
+in this case it makes it black, and rounds out its corners */
 
 .slider::-webkit-scrollbar-thumb {
     background: black;
     border-radius: 15px;
 }
 
+/*fades out the track behind the scrolls bar */
 .slider::-webkit-scrollbar-track {
     background: transparent;
 }
 
+/* selects all the section elements under the .slider class and applies these rules*/
 .slider > section {
     scroll-snap-align: center;
     flex-shrink: 0;
@@ -134,14 +148,17 @@ article {
     height: 850px;
     margin-right: 300px;
     border-radius: 10px;
-    transform-origin: center center;
-    transform: scale(1);
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/*selecting certain elements to target with rules inside the slider was hard, there is probablly a better way to do it rather than use a bunch of id's
+
+I am sure there is a bunch of recursive rule applying/selector's in here, but I was trying to challenge myself with the CSS slider functionality
+
+I will have to figure out a better way to do something like this.*/
 #aboutme {
     display: flex;
     font-size: 40px;
@@ -187,9 +204,10 @@ article {
     left: -40%;
     bottom: 50%;
     font-weight: bold;
-    font-size: 40px;;
+    font-size: 40px;
 }
 
+/* ran into a specificity issue here, worked around it by using a nested id selector*/
 #projects #rightprojects {
     font-size: 40px;
     border-left: 5px solid white;
@@ -199,7 +217,7 @@ article {
     left: 110%;
     bottom: 50%;
     font-weight: bold;
-    font-size: 40px;;
+    font-size: 40px;
 }
 
 #projects img {
@@ -283,6 +301,7 @@ article {
     text-decoration: underline;
 }
 
+/*creates footer container, applies these css rules*/
 footer {
     text-align: center;
     padding: 40px;
