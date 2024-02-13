@@ -22,11 +22,11 @@ header {
     color: white;
     padding: 40px;
     justify-content: center;
+    align-content: space-between;
     text-align: left;
     display: flex;
     flex-wrap: wrap;
-    flex: 0 0 400px;
-    max-height: 100px;
+    max-height: 200px;
     border: 2px solid black;
     -webkit-text-stroke: 1px black;
 }
@@ -54,7 +54,6 @@ header li {
 header ul {
     list-style: none;
     display: flex;
-    flex: 0 0 200px;
     margin-right: 100px;
     padding: 20px;
     justify-content: center;
@@ -139,12 +138,83 @@ article {
 
 #aboutme {
     display: flex;
+    font-size: 40px;
+    line-height: 1;
+    margin-right: 30%;
+    overflow-x: hidden;
+    justify-content: space-evenly;
 
+}
+
+#aboutme h2 {
+    margin-right: 20px;
+    border-right: 5px solid white;
+    padding: 10px;
+    
 }
 
 #projects {
     display: flex;
     flex-wrap: wrap;
+    flex: 0 1 auto;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+    margin-right: 50px;
+}
+
+#projects h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    border-bottom: 5px solid white;
+    padding: 10px;
+
+}
+
+#projects img {
+    max-width: 300px;
+    width: 100%;
+    border: 2px solid black;
+}
+
+#horiseon img {
+    min-width: 600px;
+    width: 30%;
+}
+
+#contact {
+    display: flex;
+    font-size: 40px;
+    line-height: 2;
+    overflow-x: hidden;
+    justify-content: space-evenly;
+    margin-left: 40px
+}
+
+#contact h2 {
+    margin-right: 20px;
+    border-right: 5px solid white;
+    padding: 10px;
+}
+
+#contact ul {
+    list-style: none;
+}
+
+#contact a {
+    text-decoration: none;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 /* @media screen and (max-width: 7
