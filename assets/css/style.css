@@ -169,9 +169,9 @@ I will have to figure out a better way to do something like this.*/
 }
 
 #aboutme h2 {
-    margin-right: 25px;
     border-right: 5px solid white;
-    padding: 10px;
+    padding: 30px;
+    margin-right: 20px;
     
 }
 
@@ -278,7 +278,7 @@ I will have to figure out a better way to do something like this.*/
 
 #contact h2 {
     border-right: 5px solid white;
-    padding: 10px;
+    padding: 35px;
 }
 
 #contact ul {
